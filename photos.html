@@ -25,6 +25,15 @@
       background-color: rgba(0, 0, 0, 0.5);
       border-radius: 20px;
     }
+    h2 {
+      margin-bottom: 10px;
+      font-size: 2em;
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 1.5em;
+      color: #ffd1dc;
+    }
     .slideshow img {
       display: none;
       max-width: 100%;
@@ -50,7 +59,9 @@
 </head>
 <body>
   <div class="container">
-    <h2>Memories</h2>
+    <h2>OUR MEMORIES! ♥️</h2>
+    <h3>Swipe or click through the moments</h3>
+
     <div class="slideshow" id="slideshow">
       <img src="image1.jpg" alt="Memory 1" />
       <img src="image2.jpg" alt="Memory 2" />
@@ -67,7 +78,7 @@
   </div>
 
   <script>
-    let currentSlide = 1; // Start with second image (index 1)
+    let currentSlide = 1;
     const slides = document.querySelectorAll('.slideshow img');
 
     function showSlide(index) {
@@ -81,10 +92,8 @@
       showSlide(currentSlide);
     }
 
-    // Initialize slideshow
     showSlide(currentSlide);
 
-    // Touch support for swipe
     let touchStartX = 0;
     let touchEndX = 0;
     const slideshow = document.getElementById('slideshow');
@@ -99,11 +108,11 @@
     });
 
     function handleSwipe() {
-      const threshold = 50; // Minimum swipe distance in px
+      const threshold = 50;
       if (touchEndX < touchStartX - threshold) {
-        changeSlide(1); // swipe left
+        changeSlide(1);
       } else if (touchEndX > touchStartX + threshold) {
-        changeSlide(-1); // swipe right
+        changeSlide(-1);
       }
     }
   </script>
