@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2c3e50;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+        }
+        header h1 {
+            font-size: 3em;
+            color: #1abc9c;
+        }
+        .button {
+            padding: 15px 30px;
+            background-color: #1abc9c;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 10px;
+        }
+        .text-message {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .video-container {
+            text-align: center;
+            margin: 50px 0;
+        }
+        footer {
+            text-align: center;
+            margin: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Page -->
+    <header>
+        <h1>Happy Birthday, My Love!</h1>
+        <button class="button" onclick="window.location.href='gallery.html'">Click Here</button>
+    </header>
+
+    <!-- Gallery Page -->
+    <div class="gallery">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+    </div>
+
+    <!-- Text Message Page -->
+    <div class="text-message">
+        <p>Here will be your text message!</p>
+    </div>
+
+    <!-- Video Page -->
+    <div class="video-container">
+        <video width="100%" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Thank You Page -->
+    <footer>
+        <p>Thank you for being the best part of my life! 💖</p>
+    </footer>
+</body>
+</html>
