@@ -31,7 +31,6 @@
       border-radius: 20px;
       width: 100%;
       box-sizing: border-box;
-      z-index: 1;
     }
 
     h2 {
@@ -55,26 +54,6 @@
       color: white;
       cursor: pointer;
       font-weight: 700;
-    }
-
-    .heart {
-      position: absolute;
-      font-size: 24px;
-      color: #ff69b4;
-      user-select: none;
-      animation: float 5s linear forwards;
-      z-index: 0;
-    }
-
-    @keyframes float {
-      0% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-150vh);
-        opacity: 0;
-      }
     }
 
     /* Media Queries */
@@ -113,27 +92,6 @@
     </video>
     <button class="button" onclick="window.location.href='thankyou.html'">Next</button>
   </div>
-
-  <!-- JavaScript to generate hearts continuously -->
-  <script>
-    const emojis = ['❤️', '💖', '💗', '💕', '💘', '💓', '🩷'];
-    
-    function createHeart() {
-      const heart = document.createElement('div');
-      heart.classList.add('heart');
-      heart.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-      heart.style.left = Math.random() * 100 + '%';
-      heart.style.fontSize = (16 + Math.random() * 24) + 'px';
-      heart.style.animationDuration = (4 + Math.random() * 3) + 's';
-      document.body.appendChild(heart);
-
-      setTimeout(() => {
-        heart.remove();
-      }, 6000); // Remove after animation
-    }
-
-    setInterval(createHeart, 400); // Adjust frequency (ms)
-  </script>
 
 </body>
 </html>
