@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Surprise</title>
-    <!-- Google Font: DM Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'DM Sans', sans-serif;
-            background: url('aurora.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 20px;
-        }
-        .button {
-            margin-top: 30px;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            border: none;
-            border-radius: 10px;
-            background-color: #1abc9c;
-            color: white;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #16a085;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        video {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-        p {
-            white-space: pre-wrap;
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise</title>
+  <!-- Google Font: DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'DM Sans', sans-serif;
+      background: url('aurora.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 800px;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+    }
+    .button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 10px;
+      background-color: #1abc9c;
+      color: white;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #16a085;
+    }
+    img, video {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    p {
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h2>A NOTE FROM ME. 💌</h2>
-        <p>
+  <div class="container">
+    <h2>A NOTE FROM ME. 💌</h2>
+    <p>
 Dear Nikhil,
 
 This is a website for your next birthday surprise! Don’t ask how I made it — I don’t know it myself!
@@ -68,8 +66,8 @@ So, moving forward is this little video that I made… I tried to make the audio
 
 Yours always,  
 Poorvi.
-        </p>
-        <button class="button" onclick="window.location.href='video.html'">Next</button>
-    </div>
+    </p>
+    <button class="button" onclick="window.location.href='video.html'">Next</button>
+  </div>
 </body>
 </html>
